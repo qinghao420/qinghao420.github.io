@@ -3,30 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <title>下载入口</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial;
-  background: #f5f6fa;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  background: #f5f6fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
 }
 
 .box {
   background: #fff;
-  width: 360px;
+  padding: 24px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
-  padding: 20px;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .item {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 14px 0;
   border-bottom: 1px solid #eee;
 }
@@ -54,27 +53,55 @@ body {
   border-radius: 20px;
   text-decoration: none;
   font-size: 14px;
+  white-space: nowrap;
+}
+
+.section-title {
+  margin: 16px 0 8px;
+  font-size: 14px;
+  color: #666;
 }
 </style>
 </head>
+
 <body>
 
 <div class="box">
- <div class="item">
-  <div class="left">
-    <img src="bat.png" class="icon">
-    <span>蝙蝠聊天下载</span>
-  </div>
-  <a href="https://www.batchat.com" class="btn" target="_blank">立即进入</a>
-</div>
 
-<div class="item">
-  <div class="left">
-    <img src="haiou.png" class="icon">
-    <span>海鸥聊天下载</span>
+  <!-- 原有下载入口 -->
+  <div class="item">
+    <div class="left">
+      <img src="bat.png">
+      <span>蝙蝠聊天下载</span>
+    </div>
+    <a href="https://www.batchat.com" class="btn" target="_blank">立即进入</a>
   </div>
-  <a href="https://www.haioumx.com/download.html?" class="btn" target="_blank">立即进入</a>
-</div>
+
+  <div class="item">
+    <div class="left">
+      <img src="haiou.png">
+      <span>海鸥聊天下载</span>
+    </div>
+    <a href="https://www.haioumx.com/download.html" class="btn" target="_blank">立即进入</a>
+  </div>
+
+  <!-- 快速进入游戏 -->
+  <div class="section-title">快速进入游戏</div>
+
+  <div class="item">
+    <div class="left">
+      <span>🍎 苹果快速进入</span>
+    </div>
+    <a href="http://42.51.43.192:25504/?0.19832890226505384" class="btn" target="_blank">进入游戏</a>
+  </div>
+
+  <div class="item">
+    <div class="left">
+      <span>🤖 安卓快速进入</span>
+    </div>
+    <a href="http://42.51.43.192:25504/?v=0.9255795332410197" class="btn" target="_blank">进入游戏</a>
+  </div>
+
 </div>
 
 </body>

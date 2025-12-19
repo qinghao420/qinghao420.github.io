@@ -1,114 +1,144 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
-<title>加密聊天下载入口</title>
-<style>
-body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f5f6fa;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>快速进入</title>
 
-.box {
-  background: #fff;
-  padding: 28px;
-  border-radius: 18px;
-  width: 90%;
-  max-width: 380px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f6fa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+    }
 
-.item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 0;
-  border-bottom: 1px solid #eee;
-}
+    .box {
+      width: 90%;
+      max-width: 420px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      padding: 20px;
+    }
 
-.item:last-child {
-  border-bottom: none;
-}
+    .title {
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #333;
+    }
 
-.left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px solid #eee;
+    }
 
-.left img {
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
-}
+    .item:last-child {
+      border-bottom: none;
+    }
 
-.left span {
-  font-size: 16px;
-}
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 16px;
+    }
 
-.btn {
-  background: #4f6ef7;
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 24px;
-  text-decoration: none;
-  font-size: 15px;
-}
+    .left img {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+    }
 
+    .btn {
+      background: #4f6ef7;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 22px;
+      font-size: 14px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
 
-.section-title {
-  margin: 16px 0 8px;
-  font-size: 14px;
-  color: #666;
-}
-</style>
+    .tip {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #888;
+      text-align: center;
+    }
+
+    .wechat {
+      display: none;
+      margin-bottom: 12px;
+      padding: 10px;
+      background: #fff7e6;
+      color: #d48806;
+      border-radius: 8px;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="box">
+  <div class="box">
 
-  <!-- 原有下载入口 -->
-  <div class="item">
-    <div class="left">
-      <img src="bat.png">
-      <span>蝙蝠聊天下载</span>
+    <div id="wechatTip" class="wechat">
+      当前为微信/QQ内打开<br>
+      如遇风险提示，请点击右上角 → 用浏览器打开
     </div>
-    <a href="https://www.batchat.com" class="btn" target="_blank">立即进入</a>
+
+    <div class="item">
+      <div class="left">
+        <img src="bat.png">
+        <span>蝙蝠聊天下载</span>
+      </div>
+      <a class="btn" href="https://www.batchat.com" target="_blank">进入</a>
+    </div>
+
+    <div class="item">
+      <div class="left">
+        <img src="haiou.png">
+        <span>海鸥聊天下载</span>
+      </div>
+      <a class="btn" href="https://www.haioum.com/download.html" target="_blank">进入</a>
+    </div>
+
+    <div class="title">快速进入游戏</div>
+
+    <div class="item">
+      <div class="left">
+        🍎 苹果快速进入
+      </div>
+      <a class="btn" href="enter-ios.html">进入</a>
+    </div>
+
+    <div class="item">
+      <div class="left">
+        🤖 安卓快速进入
+      </div>
+      <a class="btn" href="enter-android.html">进入</a>
+    </div>
+
+    <div class="tip">
+      如遇访问异常，请使用系统浏览器打开
+    </div>
+
   </div>
 
-  <div class="item">
-    <div class="left">
-      <img src="haiou.png">
-      <span>海鸥聊天下载</span>
-    </div>
-    <a href="https://www.haioumx.com/download.html" class="btn" target="_blank">立即进入</a>
-  </div>
-
-  <!-- 快速进入游戏 -->
-  <div class="section-title">快速进入游戏</div>
-
-  <div class="item">
-    <div class="left">
-      <span>🍎 苹果快速进入游戏</span>
-    </div>
-    <a href="http://42.51.43.192:25504/?0.19832890226505384" class="btn" target="_blank">立即进入</a>
-  </div>
-
-  <div class="item">
-    <div class="left">
-      <span>🤖 安卓快速进入游戏</span>
-    </div>
-    <a href="http://42.51.43.192:25504/?v=0.9255795332410197" class="btn" target="_blank">立即进入</a>
-  </div>
-
-</div>
+  <script>
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.includes("micromessenger") || ua.includes("qq/")) {
+      document.getElementById("wechatTip").style.display = "block";
+    }
+  </script>
 
 </body>
 </html>

@@ -1,129 +1,130 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>下载入口</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>官方服务入口</title>
 
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f5f6fa;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
-    }
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f6fb;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial;
+}
 
-    .box {
-      width: 90%;
-      max-width: 420px;
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.08);
-      padding: 20px;
-    }
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .title {
-      font-weight: 600;
-      margin-bottom: 12px;
-      color: #333;
-    }
+.box {
+  background: #fff;
+  width: 92%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+  padding: 18px;
+}
 
-    .item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 0;
-      border-bottom: 1px solid #eee;
-    }
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 
-    .item:last-child {
-      border-bottom: none;
-    }
+.desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 14px;
+}
 
-    .left {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 16px;
-    }
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
 
-    .left img {
-      width: 48px;
-      height: 48px;
-      border-radius: 10px;
-    }
+.item:last-child {
+  border-bottom: none;
+}
 
-    .btn {
-      background: #4f6ef7;
-      color: #fff;
-      padding: 10px 18px;
-      border-radius: 22px;
-      font-size: 14px;
-      text-decoration: none;
-      white-space: nowrap;
-    }
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
-    .tip {
-      margin-top: 14px;
-      font-size: 13px;
-      color: #888;
-      text-align: center;
-    }
+.left img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+}
 
-    .wechat {
-      display: none;
-      margin-bottom: 12px;
-      padding: 10px;
-      background: #fff7e6;
-      color: #d48806;
-      border-radius: 8px;
-      font-size: 14px;
-      text-align: center;
-    }
-  </style>
+.left span {
+  font-size: 16px;
+}
+
+.btn {
+  background: #4f6ef7;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 22px;
+  text-decoration: none;
+  font-size: 15px;
+  white-space: nowrap;
+}
+</style>
 </head>
 
 <body>
-
+<div class="container">
   <div class="box">
 
-    <div id="wechatTip" class="wechat">
-      当前为微信/QQ内打开<br>
-      如遇风险提示，请点击右上角 → 用浏览器打开
-    </div>
+    <div class="title">官方服务入口</div>
+    <div class="desc">请选择您需要访问的官方服务</div>
 
+    <!-- 海鸥 -->
     <div class="item">
       <div class="left">
         <img src="haiou.png">
-        <span>海鸥聊天下载</span>
+        <span>海鸥官方服务</span>
       </div>
-      <a class="btn" href="https://www.haioumx.com/" target="_blank">立即进入</a>
+      <a class="btn" href="https://www.haioumx.com/download.html" target="_blank">立即访问</a>
     </div>
 
+    <!-- 蝙蝠 -->
     <div class="item">
       <div class="left">
         <img src="bat.png">
-        <span>蝙蝠聊天下载</span>
+        <span>蝙蝠官方服务</span>
       </div>
-      <a class="btn" href="https://www.batchat.com/" target="_blank">立即进入</a>
+      <a class="btn" href="https://www.batchat.com" target="_blank">立即访问</a>
     </div>
 
+    <!-- 苹果 -->
+    <div class="item">
+      <div class="left">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/apple.svg">
+        <span>Apple 设备入口</span>
+      </div>
+      <a class="btn" href="https://ios.569888.cc" target="_blank">进入</a>
+    </div>
 
-    <div class="tip">
-      如遇访问异常，请使用UC浏览器打开
+    <!-- 安卓 -->
+    <div class="item">
+      <div class="left">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/android.svg">
+        <span>Android 设备入口</span>
+      </div>
+      <a class="btn" href="https://and.569888.cc" target="_blank">进入</a>
     </div>
 
   </div>
-
-  <script>
-    var ua = navigator.userAgent.toLowerCase();
-    if (ua.includes("micromessenger") || ua.includes("qq/")) {
-      document.getElementById("wechatTip").style.display = "block";
-    }
-  </script>
-
+</div>
 </body>
 </html>
